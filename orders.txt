@@ -4,11 +4,9 @@ git add filename  //准备上传（没有反应是一切正常）
 git commit -m "文本说明"  //正式提交
 git status  //检查状态，检查有无文件有修改
 git diff    //查看有修改文件的差异
-cat 文件名  //显示文件内容
 git reset --hard HEAD^   //回溯之前的版本（几个^代表上几个版本）
 git reset --hard 版本号   //回溯到之前的某个版本（版本号不用写全，四位就够了）
 git reflog  //查询之前的命令
-rm 文件名  //删除文件
 rm .git/index.lock  //删除index.lock
 git diff HEAD -- 文件名  //比较当前工作区内容和最后一次上传内容的差别
 git checkout -- 文件名   //将工作区某一文件还原到最后一次上传的状态
@@ -20,3 +18,15 @@ git push origin master     //将本地改动上传到远程库
 git remote -v     //查看远程库的信息
 git remote rm origin   //删除本地库与远程库的链接
 git clone git@github.com:用户名/库名.git   //克隆远程库的文件
+
+/*--------------------文件相关操作--------------------*/
+cd 文件名                 //进入文件夹(cd是change dictory)
+cd ..                    //回到上一级文件夹
+cat 文件名               //显示文件内容
+ls                       //列出当前目录中的所有文件(ls 是list)
+rm 文件名                //删除文件
+rm -r 文件夹名           //删除一个文件夹
+touch 文件名            //新建一个文件
+mkdir 文件夹名          //新建一个文件夹
+mv 文件名 目标文件夹名   //移动文件到目标文件夹(文件与文件夹应在同一目录下)
+reset                   //将当前git.bush清屏
