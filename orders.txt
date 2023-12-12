@@ -49,6 +49,12 @@ git merge 分支名          //把该分支合并到当前分支上
 git merge --mo-ff 分支名  //(禁用快速合并模式)普通合并，相当于一次提交（可加-m提交备注）
 git branch -d 分支名      //删除该分支(已合并的)(未合并的要用-D)
 git stash                //将当前工作区变动存起来
+git stash list           //查看存储的stash
+git stash pop            //还原最后一次储存的工作区，并删除最后一次的存储记录
+git stash apply          //还原最后一次储存的工作区
+git stash apply stash编号(例如stash@{0})    //还原特定某次储存的工作区
+git stash drop           //删除最后一次储存的stash
+git cherry-pick  版本号   //仅将某次提交的内容合并进来
 
 /*--------------------文件相关操作--------------------*/
 cd 文件名                 //进入文件夹(cd是change dictory)
