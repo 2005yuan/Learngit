@@ -1,0 +1,16 @@
+pwd  //查询仓库地址
+git add filename  //准备上传（没有反应是一切正常）
+git commit -m "文本说明"  //正式提交
+git status  //检查状态，检查有无文件有修改
+git diff    //查看有修改文件的差异
+cat 文件名  //显示文件内容
+git reset --hard HEAD^   //回溯之前的版本（几个^代表上几个版本）
+git reset --hard 版本号   //回溯到之前的某个版本（版本号不用写全，四位就够了）
+git reflog  //查询之前的命令
+rm 文件名  //删除文件
+rm .git/index.lock  //删除index.lock
+git diff HEAD -- 文件名  //比较当前工作区内容和最后一次上传内容的差别
+git checkout -- 文件名   //将工作区某一文件还原到最后一次上传的状态
+git reset HEAD 文件名    //把暂存区的该文件删除
+rm 文件名   //本地工作区删除文件
+git rm 文件名   //在缓存区删除文件
