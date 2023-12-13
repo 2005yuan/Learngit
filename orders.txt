@@ -85,3 +85,13 @@ touch 文件名            //新建一个文件
 mkdir 文件夹名          //新建一个文件夹
 mv 文件名 目标文件夹名   //移动文件到目标文件夹(文件与文件夹应在同一目录下)
 reset                   //将当前git.bush清屏
+
+/*------------------------简写相关操作------------------------*/
+git config --global alias.改写名 原指令    //为原指令提供缩写
+git config --global alias.改写名 '多指令'  //同上
+本地缩写：
+st          status
+ci          commit
+co          checkout
+br          branch
+unstage     reset HEAD
